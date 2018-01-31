@@ -18,8 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->float('total_hours', 4, 2);
-            $table->float('pay_hours', 4, 2);
+            $table->float('total_hours', 4, 2)->nullable();
+            $table->float('pay_hours', 4, 2)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
