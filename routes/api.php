@@ -13,15 +13,17 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::group([
+Route::group(['middleware' => 'api'], function ($router) {
 
-    'middleware' => 'api'
+    $router->post('login', 'Api\ApiAuthController@login');
+    $router->post('logout', 'Api\ApiAuthController@logout');
+    $router->post('refresh', 'Api\ApiAuthController@refresh');
+    $router->get('me', 'Api\ApiAuthController@me');
 
-], function ($router) {
+});
 
-    Route::post('login', 'AuthController@login');
-    Route::post('logout', 'AuthController@logout');
-    Route::post('refresh', 'AuthController@refresh');
-    Route::get('me', 'AuthController@me');
+Route::namespace('Api')->middleware(['jwt.auth'])->group(function($router) {
+
+    $router->resource('tasks', 'TaskController');
 
 });
