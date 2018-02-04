@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/charts.js": "/js/charts.js",
+    "/vendor/flot/jquery.flot.js": "/vendor/flot/jquery.flot.js",
+    "/vendor/flot/jquery.flot.resize.js": "/vendor/flot/jquery.flot.resize.js",
+    "/vendor/flot/jquery.flot.pie.js": "/vendor/flot/jquery.flot.pie.js",
+    "/vendor/flot/jquery.flot.categories.js": "/vendor/flot/jquery.flot.categories.js"
+}

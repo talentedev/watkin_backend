@@ -29,7 +29,6 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/';
 
-    // protected $guard = 'web';
     /**
      * Set the guard for the controller.
      *
@@ -58,7 +57,7 @@ class LoginController extends Controller
         if(!Auth::guard('web')->attempt($credentials)){
             return redirect('/login');
         }else{
-            return view('home');
+            return redirect('/');
         }
     }
 

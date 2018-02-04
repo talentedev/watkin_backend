@@ -17,4 +17,10 @@ Route::group(['middleware' => 'web'], function ($router) {
 
     Route::get('/', 'HomeController@index')->name('home');
 
+    Route::namespace('Admin')->group( function ($router) {
+
+        $router->get('dashboard', 'DashboardController@index');
+
+    });
+
 });

@@ -32,7 +32,7 @@ return [
 
     'logo' => '<b>Watkin</b>',
 
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => '<b>W</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,81 +108,54 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
+        'Mane Menu',
         [
-            'text' => 'Blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text'        => 'Dashbord',
+            'url'         => '',
+            'icon'        => 'dashboard '
         ],
         [
-            'text'        => 'Pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        'ACCOUNT SETTINGS',
-        [
-            'text' => 'Profile',
-            'url'  => 'admin/settings',
-            'icon' => 'user',
+            'text' => 'Upcoming Tasks',
+            'url'  => 'upcoming',
+            'icon' => 'line-chart',
+            'label'       => 1254,
+            'label_color' => 'success'
         ],
         [
-            'text' => 'Change Password',
-            'url'  => 'admin/settings',
-            'icon' => 'lock',
+            'text' => 'Completed Tasks',
+            'url'  => 'completed',
+            'icon' => 'list-ul',
+            'label'       => 6154,
+            'label_color' => 'success'
         ],
         [
-            'text'    => 'Multilevel',
-            'icon'    => 'share',
-            'submenu' => [
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'Level One',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Level Two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'Level Two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        'LABELS',
-        [
-            'text'       => 'Important',
-            'icon_color' => 'red',
+            'text' => 'Assigned Tasks',
+            'url'  => 'assigned',
+            'icon' => 'list-ul',
+            'label'       => 6154,
+            'label_color' => 'success'
         ],
         [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
+            'text' => 'Messages',
+            'url'  => 'messages',
+            'icon' => 'list-ul',
+            'label'       => 6154,
+            'label_color' => 'success'
         ],
         [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
+            'text' => 'Notifications',
+            'url'  => 'notifications',
+            'icon' => 'list-ul',
+            'label'       => 6154,
+            'label_color' => 'success'
         ],
+        [
+            'text' => 'Contact Us',
+            'url'  => 'contactus',
+            'icon' => 'list-ul',
+            'label'       => 6154,
+            'label_color' => 'success'
+        ]
     ],
 
     /*
@@ -219,5 +192,6 @@ return [
     'plugins' => [
         'datatables' => true,
         'select2'    => true,
+        'flot'    => true,
     ],
 ];
