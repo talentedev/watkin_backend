@@ -12,5 +12,10 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .js('resources/assets/js/charts.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   .js('resources/assets/js/dashboard.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .sass('resources/assets/sass/dashboard.scss', 'public/css')
+   .sass('resources/assets/sass/upcoming.scss', 'public/css')
+   // copy node modules to public directory
+   .copy('node_modules/jvectormap/jquery-jvectormap.css', 'public/vendor/jvectormap/jquery-jvectormap.css')
+   .copy('node_modules/jvectormap/jquery-jvectormap.min.js', 'public/vendor/jvectormap/jquery-jvectormap.min.js');

@@ -20,6 +20,7 @@ Route::group(['middleware' => 'web'], function ($router) {
     Route::namespace('Admin')->group( function ($router) {
 
         $router->get('dashboard', 'DashboardController@index');
+        $router->get('upcoming', 'UpcomingTaskController@index');
 
     });
 

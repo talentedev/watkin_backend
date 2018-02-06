@@ -192,6 +192,8 @@ return [
     'plugins' => [
         'datatables' => true,
         'select2'    => true,
-        'flot'    => true,
+        'flot'       => true,
+        'jvectormap' => true,
+        'iCheck'     => true,
     ],
 ];

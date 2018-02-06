@@ -19,6 +19,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "flot": "^0.8.0-alpha"
+        "flot": "^0.8.0-alpha",
+        "jvectormap": "^2.0.4"
     }
 }

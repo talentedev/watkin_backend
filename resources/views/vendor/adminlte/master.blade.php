@@ -25,7 +25,12 @@
 
     @if(config('adminlte.plugins.datatables'))
         <!-- DataTables -->
-        <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+    @endif
+
+    @if(config('adminlte.plugins.jvectormap'))
+        <!-- jvectormap -->
+        <link rel="stylesheet" href="{{ asset('vendor/jvectormap/jquery-jvectormap.css') }}">
     @endif
 
     @yield('adminlte_css')
@@ -52,7 +57,8 @@
 
 @if(config('adminlte.plugins.datatables'))
     <!-- DataTables -->
-    <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 @endif
 
 @if(config('adminlte.plugins.flot'))
@@ -61,6 +67,17 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.resize.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.pie.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.categories.min.js"></script>
+@endif
+
+@if(config('adminlte.plugins.jvectormap'))
+    <!-- jvectormap -->
+    <script src="{{ asset('vendor/jvectormap/jquery-jvectormap.min.js') }}"></script>
+    <script src="{{ asset('vendor/jvectormap/jquery-jvectormap-world-mill-en.js') }}"></script>
+@endif
+
+@if(config('adminlte.plugins.iCheck'))
+    <!-- iCheck -->
+    <script src="{{ asset('vendor/adminlte/plugins/iCheck/iCheck.min.js') }}"></script>
 @endif
 
 @yield('adminlte_js')
