@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'AdminLTE')
+@section('title', 'Watkin - Dashboard')
 
 @section('content_header')
     <h1>Dashboard</h1>
@@ -94,7 +94,7 @@
             </div>
             <!-- /.box -->
             <!-- MAP & BOX PANE -->
-            <div class="box box-success">
+            <div class="box box-danger">
                 <div class="box-header with-border">
                     <h3 class="box-title">Customer Demographic</h3>
 
@@ -124,7 +124,7 @@
         <!-- /.col -->
 
         <div class="col-md-6">
-            <div class="box box-primary">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <i class="fa fa-th-list"></i>
 
@@ -192,13 +192,13 @@
                             <td><span class="badge bg-yellow">pending</span></td>
                         </tr>
                     </table>
-                    <a class="visible-lg visible-md mt-1 text-underline" href="#">Check all the upcoming tasks</a>
+                    <a class="visible-lg visible-md visible-sm mt-1 mb-1 text-underline" href="/upcoming">Check all the upcoming tasks</a>
                 </div>
                 <!-- /.box-body-->
             </div>
             <!-- /.box -->
 
-            <div class="box box-success">
+            <div class="box box-warning">
                 <div class="box-header with-border">
                     <h3 class="box-title">Top Locations</h3>
 
@@ -247,6 +247,11 @@
     <!-- /.row -->
 @stop
 
-@stack('css')
+@push('css')
     <!-- custom styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dashboard.css') }}">
+@endpush
+
+@push('js')
+    <script src="{{ asset('js/dashboard.js') }}"></script>
+@endpush

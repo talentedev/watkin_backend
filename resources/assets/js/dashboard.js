@@ -73,27 +73,27 @@ $(function () {
      * Create a world map with markers
      */
     $('#world-map-markers').vectorMap({
-          map              : 'world_mill_en',
-          normalizeFunction: 'polynomial',
-          hoverOpacity     : 0.7,
-          hoverColor       : false,
-          backgroundColor  : 'transparent',
-          regionStyle      : {
-              initial      : {
-                  fill            : 'rgba(210, 214, 222, 1)',
-                  'fill-opacity'  : 1,
-                  stroke          : 'none',
-                  'stroke-width'  : 0,
-                  'stroke-opacity': 1
-              },
-              hover        : {
-                  'fill-opacity': 0.7,
-                  cursor        : 'pointer'
-              },
-              selected     : {
-                  fill: 'yellow'
-              },
-              selectedHover: {}
+        map              : 'world_mill_en',
+        normalizeFunction: 'polynomial',
+        hoverOpacity     : 0.7,
+        hoverColor       : false,
+        backgroundColor  : 'transparent',
+        regionStyle      : {
+            initial      : {
+                fill            : 'rgba(210, 214, 222, 1)',
+                'fill-opacity'  : 1,
+                stroke          : 'none',
+                'stroke-width'  : 0,
+                'stroke-opacity': 1
+            },
+            hover        : {
+                'fill-opacity': 0.7,
+                cursor        : 'pointer'
+            },
+            selected     : {
+                fill: 'yellow'
+            },
+            selectedHover: {}
         },
         markerStyle      : {
             initial: {
@@ -130,25 +130,6 @@ $(function () {
             { latLng: [0.33, 6.73], name: 'São Tomé and Príncipe' }
         ]
     });
-
-    // Datatable
-    $('#example1').DataTable();
-
-    //iCheck for checkbox and radio inputs
-    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-      checkboxClass: 'icheckbox_minimal-blue',
-      radioClass   : 'iradio_minimal-blue'
-    })
-    //Red color scheme for iCheck
-    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-      checkboxClass: 'icheckbox_minimal-red',
-      radioClass   : 'iradio_minimal-red'
-    })
-    //Flat red color scheme for iCheck
-    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-      checkboxClass: 'icheckbox_flat-green',
-      radioClass   : 'iradio_flat-green'
-    })
 
 })
 

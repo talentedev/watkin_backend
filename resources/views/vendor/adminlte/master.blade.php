@@ -82,5 +82,8 @@
 
 @yield('adminlte_js')
 
+<!-- Axios -->
+<script src="{{ asset('vendor/axios/axios.min.js') }}"></script>
+
 </body>
 </html>

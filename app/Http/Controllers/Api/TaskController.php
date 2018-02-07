@@ -60,6 +60,7 @@ class TaskController extends ApiController
         } else {
             $this->task->name = $request->get('name');
             $this->task->deadline = $request->get('deadline');
+            $this->task->description = $request->get('description');
             $this->task->user_id = auth()->user()->id;
             $this->task->save();
             $message = 'Task successfully created';

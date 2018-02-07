@@ -111,7 +111,7 @@ return [
         'Mane Menu',
         [
             'text'        => 'Dashbord',
-            'url'         => '',
+            'url'         => 'dashboard',
             'icon'        => 'dashboard '
         ],
         [

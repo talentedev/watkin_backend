@@ -3,7 +3,14 @@
     "/css/app.css": "/css/app.css",
     "/css/dashboard.css": "/css/dashboard.css",
     "/css/upcoming.css": "/css/upcoming.css",
+    "/css/completed.css": "/css/completed.css",
+    "/css/assigned.css": "/css/assigned.css",
+    "/js/upcoming.js": "/js/upcoming.js",
     "/js/dashboard.js": "/js/dashboard.js",
+    "/js/completed.js": "/js/completed.js",
+    "/js/common.js": "/js/common.js",
+    "/js/assigned.js": "/js/assigned.js",
     "/vendor/jvectormap/jquery-jvectormap.css": "/vendor/jvectormap/jquery-jvectormap.css",
-    "/vendor/jvectormap/jquery-jvectormap.min.js": "/vendor/jvectormap/jquery-jvectormap.min.js"
+    "/vendor/jvectormap/jquery-jvectormap.min.js": "/vendor/jvectormap/jquery-jvectormap.min.js",
+    "/vendor/axios/axios.min.js": "/vendor/axios/axios.min.js"
 }

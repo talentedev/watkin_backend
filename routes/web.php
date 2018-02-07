@@ -11,16 +11,29 @@
 |
 */
 
-Route::group(['middleware' => 'web'], function ($router) {
+Route::group(['middleware' => 'web'], function () {
 
     Auth::routes();
 
     Route::get('/', 'HomeController@index')->name('home');
 
-    Route::namespace('Admin')->group( function ($router) {
+    Route::namespace('Admin')->group( function () {
 
-        $router->get('dashboard', 'DashboardController@index');
-        $router->get('upcoming', 'UpcomingTaskController@index');
+        // Dashboard
+        Route::get('dashboard', 'DashboardController@index');
+        
+        // Upcoming Tasks
+        Route::prefix('upcoming')->group(function () {
+            Route::get('/', 'UpcomingTaskController@index');
+            Route::delete('/delete/{id}', 'UpcomingTaskController@deleteTask');
+            Route::post('/delete-all', 'UpcomingTaskController@deleteTasks');
+        });
+
+        // Completed Tasks
+        Route::get('completed', 'CompletedTaskController@index');
+
+        // Assigned Tasks
+        Route::get('assigned', 'AssignedTaskController@index');
 
     });
 

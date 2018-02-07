@@ -33,6 +33,7 @@ class UsersTableSeeder extends Seeder
         $client = new App\User;
         $client->name = "Client";
         $client->email = "client@gmail.com";
+        $client->phone = '1234567890';
         $client->password = \Illuminate\Support\Facades\Hash::make("testing");
         $client->save();
 

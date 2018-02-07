@@ -17,6 +17,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('phone')->nullable();
             $table->string('password');
             $table->float('total_hours', 4, 2)->nullable();
             $table->float('pay_hours', 4, 2)->nullable();
