@@ -113,48 +113,6 @@ return [
             'text'        => 'Dashbord',
             'url'         => 'dashboard',
             'icon'        => 'dashboard '
-        ],
-        [
-            'text' => 'Upcoming Tasks',
-            'url'  => 'upcoming',
-            'icon' => 'line-chart',
-            'label'       => 1254,
-            'label_color' => 'success'
-        ],
-        [
-            'text' => 'Completed Tasks',
-            'url'  => 'completed',
-            'icon' => 'list-ul',
-            'label'       => 6154,
-            'label_color' => 'success'
-        ],
-        [
-            'text' => 'Assigned Tasks',
-            'url'  => 'assigned',
-            'icon' => 'list-ul',
-            'label'       => 6154,
-            'label_color' => 'success'
-        ],
-        [
-            'text' => 'Messages',
-            'url'  => 'messages',
-            'icon' => 'list-ul',
-            'label'       => 6154,
-            'label_color' => 'success'
-        ],
-        [
-            'text' => 'Notifications',
-            'url'  => 'notifications',
-            'icon' => 'list-ul',
-            'label'       => 6154,
-            'label_color' => 'success'
-        ],
-        [
-            'text' => 'Contact Us',
-            'url'  => 'contactus',
-            'icon' => 'list-ul',
-            'label'       => 6154,
-            'label_color' => 'success'
         ]
     ],
 

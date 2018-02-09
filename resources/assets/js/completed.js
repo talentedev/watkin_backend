@@ -1,22 +1,26 @@
 $(function () {
 
-    // Datatable
-    $('#example1').DataTable();
+    // Datatable initialize
+    $('#completedTasks').DataTable({
+        order: [1, 'desc'],
+        columnDefs: [
+            { targets: [0, 4, 6], orderable: false}
+        ],
+        paging: false,
+        info: false
+    });
 
-    //iCheck for checkbox and radio inputs
-    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-      checkboxClass: 'icheckbox_minimal-blue',
-      radioClass   : 'iradio_minimal-blue'
-    })
-    //Red color scheme for iCheck
-    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-      checkboxClass: 'icheckbox_minimal-red',
-      radioClass   : 'iradio_minimal-red'
-    })
-    //Flat red color scheme for iCheck
-    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-      checkboxClass: 'icheckbox_flat-green',
-      radioClass   : 'iradio_flat-green'
-    })
+    // Select all rows.
+    $('thead input').on('ifChecked', function(event){
+        $('tbody input').each(function () {
+            $(this).iCheck('check');
+        });
+    });
 
+    // Deselect all rows.
+    $('thead input').on('ifUnchecked', function(event){
+        $('tbody input').each(function () {
+            $(this).iCheck('uncheck');
+        });
+    });
 })

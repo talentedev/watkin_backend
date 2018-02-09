@@ -47,7 +47,7 @@
                         </td>
                         <td class="text-center text-green h4"><i class="fa fa-check-square"></i></td>
                         <td class="text-center text-red h4">
-                            <i class="fa fa-trash delete-task" data-id="{{ $task->id }}"></i>
+                            <i class="fa fa-trash pointer delete-task" data-id="{{ $task->id }}"></i>
                         </td>
                     </tr>
                 @endforeach
@@ -64,6 +64,7 @@
     <!-- iCheck -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/adminlte/plugins/iCheck/all.css') }}">
     <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/common.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/upcoming.css') }}">
 @endpush
 

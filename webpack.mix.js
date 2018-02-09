@@ -20,6 +20,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .js('resources/assets/js/assigned.js', 'public/js')
    // Styles
    .sass('resources/assets/sass/app.scss', 'public/css')
+   .sass('resources/assets/sass/common.scss', 'public/css')
    .sass('resources/assets/sass/dashboard.scss', 'public/css')
    .sass('resources/assets/sass/upcoming.scss', 'public/css')
    .sass('resources/assets/sass/completed.scss', 'public/css')
